@@ -211,8 +211,6 @@ breast-cancer-api/
 └── README.md
 ```
 
-*The layout mirrors the expense‑tracker project, but adds a dedicated `models/` package for the TensorFlow model.*
-
 ---  
 
 ## Database Design  
