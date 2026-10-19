@@ -1,34 +1,50 @@
-# Ignore the breast cancer model
-app/breast_cancer_classifier.h5
-
-# Ignore the uploads directory
-uploads/
-
-# Ignore SQLite database if you don't want to include it
-cancer_classifier.db
-
-# Ignore Python cache files
-__pycache__/
-*.pyc
-*.pyo
-
-# Byte-compiled / optimized / DLL files
+# Python
 __pycache__/
 *.py[cod]
+*$py.class
 
-# Virtual Environments
-fastapi-todo-env/
-env/
+# Virtual environments
 venv/
-*.env
+env/
+.venv/
+fastapi-todo-env/
 
-# Machine Learning model files
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Trained models
 *.h5
+*.keras
 *.model
+*.pt
+*.pth
+*.onnx
 
-# Logs
+# Dataset and generated training outputs
+data/
+datasets/
+training_output/
+output/
+outputs/
+
+# Training logs and generated metrics
 *.log
+training_log.csv
+test_metrics.json
+test_predictions.csv
 
-# OS generated files
+# Application uploads and local database
+uploads/
+cancer_classifier.db
+*.sqlite
+*.sqlite3
+
+# OS and editor files
 .DS_Store
 Thumbs.db
+.vscode/
+.idea/
+
+.directory
