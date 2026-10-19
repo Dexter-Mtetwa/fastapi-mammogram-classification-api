@@ -271,22 +271,6 @@ Recall deserves particular attention in this task because false negatives—mali
 
 The current script uses `0.5` as its evaluation threshold. It does not optimize that threshold for a clinical application.
 
-## Illustrative results — not actual model measurements
-
-> **Placeholder data only.** The model has not yet been trained using the dataset for this repository. The values below are illustrative figures for drafting the project documentation and are not observed experimental results.
-
-| Metric | Illustrative value |
-|---|---:|
-| Accuracy | 91.0% |
-| Precision | 89.0% |
-| Recall / sensitivity | 93.0% |
-| F1-score | 91.0% |
-| ROC-AUC | 0.95 |
-
-These figures must be replaced with the actual held-out test metrics after training. They should not be cited as evidence that this implementation achieves these results.
-
-The script produces a confusion matrix and a classification report as additional evaluation outputs. The saved JSON file contains the numeric metrics.
-
 ## Installation and training
 
 ### Requirements
